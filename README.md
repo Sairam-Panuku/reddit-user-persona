@@ -38,22 +38,21 @@ bash
 Copy code
 git clone https://github.com/Sairam-Panuku/reddit-user-persona.git
 cd reddit-user-persona
+---
 2. Install Dependencies
-bash
-Copy code
+
 pip install -r requirements.txt
 Make sure praw and python-dotenv are included in requirements.txt.
-
+---
 3. Setup Reddit API
 Create a .env file with your credentials:
 
-env
-Copy code
 REDDIT_CLIENT_ID=your_client_id
 REDDIT_CLIENT_SECRET=your_client_secret
 REDDIT_USERNAME=your_reddit_username
 REDDIT_PASSWORD=your_reddit_password
 REDDIT_USER_AGENT=persona-extractor-script
+---
 4. Run the Script
 bash
 Copy code
@@ -65,13 +64,13 @@ Generated outputs will be saved under the outputs/ directory:
 .json → persona info in json_output/
 
 .html → full profile in html_output/
-
+---
 📸 Sample Output
 
 
 💡 Left: Persona profile
 📄 Right: Scrollable raw Reddit data
-
+---
 🧠 Use Cases
 UX Designers building behavior-driven personas
 
@@ -80,7 +79,7 @@ Recruiters reviewing public user footprints
 Social scientists analyzing discussion patterns
 
 Developers building user intelligence dashboards
-
+---
 📝 Notes
 Each user undergoes:
 
@@ -93,10 +92,10 @@ HTML profile generation
 The layout is responsive and clean
 
 The .env file is ignored by .gitignore for safety
-
+---
 🤝 Contributing
 Contributions are welcome! Ideas you can try:
-
+---
 🌙 Add dark mode
 
 📈 Add comparison between users
@@ -104,13 +103,13 @@ Contributions are welcome! Ideas you can try:
 🧠 GPT-based advanced persona models
 
 🖨️ Export personas as PDF
-
+---
 📄 License
 MIT License – use it freely and improve it. Attribution appreciated!
-
+---
 💡 Inspiration
 Built to help designers, developers, and analysts visualize user personas using social footprints like Reddit.
-
+---
 Built with ❤️ by Sairam Panuku
 
 ## 📁 Folder Structure
