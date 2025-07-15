@@ -31,24 +31,6 @@ It analyzes user behavior, builds a structured profile, and generates a clean, s
 
 ---
 
-## 📁 Folder Structure
-
-```
-reddit-user-persona/
-├── .env                      # Reddit credentials (ignored)
-├── .gitignore
-├── main.py                   # Orchestrates full flow
-├── generate_persona.py       # Extracts persona from text
-├── generate_html_profile.py  # Creates styled HTML profiles
-├── sample_output.png         # Screenshot of final HTML output
-├── requirements.txt
-├── README.md
-└── outputs/
-    ├── text_output/          # Raw Reddit content (.txt)
-    ├── json_output/          # Persona data (.json)
-    └── html_output/          # Final profile pages (.html)
-
----
 
 #🚀 Getting Started
 1. Clone the Repo
@@ -130,3 +112,23 @@ MIT License – use it freely and improve it. Attribution appreciated!
 Built to help designers, developers, and analysts visualize user personas using social footprints like Reddit.
 
 Built with ❤️ by Sairam Panuku
+
+## 📁 Folder Structure
+
+```
+reddit-user-persona/
+├── .env                      # Reddit credentials (ignored)
+├── .gitignore
+├── main.py                   # Orchestrates full flow
+├── generate_persona.py       # Extracts persona from text
+├── generate_html_profile.py  # Creates styled HTML profiles
+├── sample_output.png         # Screenshot of final HTML output
+├── requirements.txt
+├── README.md
+└── outputs/
+    ├── text_output/          # Raw Reddit content (.txt)
+    ├── json_output/          # Persona data (.json)
+    └── html_output/          # Final profile pages (.html)
+
+---
+
