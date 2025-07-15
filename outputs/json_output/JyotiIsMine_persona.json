@@ -1,0 +1,37 @@
+{
+  "name": "Jyotiismine",
+  "username": "JyotiIsMine",
+  "quote": "I want to make financially wise decisions while living comfortably.",
+  "age": "Not mentioned",
+  "occupation": "Bit Confused About How To Automate It Using Github Actions",
+  "company": "Ey",
+  "location": "The Menu And Said Ye Wala",
+  "interests": [
+    "jaipur",
+    "reactnative",
+    "macbookpro",
+    "expo",
+    "IndiaTech"
+  ],
+  "motivations": [
+    "Better opportunities"
+  ],
+  "frustrations": [
+    "Confusing policies"
+  ],
+  "goals": [
+    "Career growth",
+    "Work-life balance"
+  ],
+  "preferences": [
+    "Online communities",
+    "Peer opinions",
+    "Anonymity"
+  ],
+  "personality": [
+    "Introvert",
+    "Thinking",
+    "Judging",
+    "Sensing"
+  ]
+}

@@ -1,0 +1,888 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Persona: Unidan</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #e1f5fe);
+            margin: 0;
+            padding: 2rem;
+            color: #2c3e50;
+        }
+        .container {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+        .left {
+            flex: 1;
+            min-width: 400px;
+            max-width: 700px;
+        }
+        .right {
+            flex: 1;
+            min-width: 400px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        h1 {
+            margin-bottom: 0.3rem;
+            font-size: 2rem;
+            color: #00796b;
+        }
+        h2 {
+            font-size: 1.1rem;
+            color: #4a148c;
+            margin-top: 1.4rem;
+            margin-bottom: 0.6rem;
+        }
+        blockquote {
+            font-style: italic;
+            color: #555;
+            margin: 0.5rem 0 1.2rem;
+            padding-left: 1rem;
+            border-left: 4px solid #00bfa5;
+        }
+        .tag {
+            display: inline-block;
+            background: #b2ebf2;
+            color: #004d40;
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            margin: 0.3rem 0.4rem 0 0;
+            font-size: 0.85rem;
+        }
+        .muted {
+            color: #999;
+            font-style: italic;
+        }
+        .tag-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+        }
+        .demographics p {
+            margin: 0.4rem 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.2rem;
+            margin-top: 1.2rem;
+        }
+        .grid-section {
+            background: #f3e5f5;
+            padding: 1rem;
+            border-radius: 12px;
+            border: 1px solid #d1c4e9;
+        }
+        .scroll-box {
+            background: #f9fbe7;
+            padding: 1rem;
+            border: 1px solid #c5e1a5;
+            border-radius: 12px;
+            overflow-y: auto;
+        }
+        .scroll-box pre {
+            white-space: pre-wrap;
+            font-size: 0.95rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- LEFT PANEL -->
+        <div class="card left">
+            <h1>Unidan</h1>
+            <blockquote>"I want to make financially wise decisions while living comfortably."</blockquote>
+            <p><strong>Username:</strong> u/Unidan</p>
+
+            <div class="demographics">
+                <h2>🧠 Demographics</h2>
+                <p><strong>Age:</strong> Not mentioned</p>
+                <p><strong>Occupation:</strong> Fan Of Flying Foxes And Pangolins</p>
+                <p><strong>Company:</strong> Ey</p>
+                <p><strong>Location:</strong> The Neighborhood</p>
+            </div>
+
+            <div class="grid">
+                <div class="grid-section">
+                    <h2>🌱 Motivations</h2>
+                    <p class="muted">Not specified</p>
+                </div>
+                <div class="grid-section">
+                    <h2>😤 Frustrations</h2>
+                    <div class="tag-group"><span class="tag" style="background:#ffccbc">Lack of information</span></div>
+                </div>
+                <div class="grid-section">
+                    <h2>🎯 Goals</h2>
+                    <div class="tag-group"><span class="tag" style="background:#ffe082">Career growth</span><span class="tag" style="background:#ffe082">Work-life balance</span></div>
+                </div>
+                <div class="grid-section">
+                    <h2>💡 Preferences</h2>
+                    <div class="tag-group"><span class="tag" style="background:#b2ebf2">Online communities</span><span class="tag" style="background:#b2ebf2">Peer opinions</span><span class="tag" style="background:#b2ebf2">Anonymity</span></div>
+                </div>
+                <div class="grid-section">
+                    <h2>📌 Top Interests</h2>
+                    <div class="tag-group"><span class="tag" style="background:#c5cae9">SubredditDrama</span><span class="tag" style="background:#c5cae9">pics</span><span class="tag" style="background:#c5cae9">UnidanFans</span><span class="tag" style="background:#c5cae9">aww</span><span class="tag" style="background:#c5cae9">AdviceAnimals</span></div>
+                </div>
+                <div class="grid-section">
+                    <h2>📍 Personality</h2>
+                    <div class="tag-group"><span class="tag" style="background:#dcedc8">Introvert</span><span class="tag" style="background:#dcedc8">Thinking</span><span class="tag" style="background:#dcedc8">Judging</span><span class="tag" style="background:#dcedc8">Sensing</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="card right">
+            <h2>🧾 Raw Reddit Data</h2>
+            <div class="scroll-box">
+                <pre>Reddit User: u/Unidan
+============================================================
+
+Posts:
+------------------------------------------------------------
+[Post 1]
+Subreddit: a:t5_303zl
+Title: Forest patch at this cross street has had fog on it at night for the last week, but not anywhere else in the neighborhood! Any ideas?
+Body: 
+URL: http://i.imgur.com/vLZ6JFg.png
+Score: 3
+------------------------------------------------------------
+
+[Post 2]
+Subreddit: outside
+Title: Is it odd to anyone else that the devs made the wireframes so detailed when they're not even seen beneath the meshes?
+Body: 
+URL: http://i.imgur.com/srDkyMi.jpg
+Score: 5
+------------------------------------------------------------
+
+[Post 3]
+Subreddit: mycology
+Title: Found these in a Costa Rican forest near Cerro de la Muerte. Any ideas? Sorry for the somewhat unhelpful photo!
+Body: 
+URL: http://i.imgur.com/2Y53qHi.jpg
+Score: 16
+------------------------------------------------------------
+
+[Post 4]
+Subreddit: Braveryjerk
+Title: Can't we all just take a minute to remember how wonderful salt water taffy is?
+Body: 
+URL: http://i.imgur.com/8ah7QbF.jpg
+Score: 31
+------------------------------------------------------------
+
+[Post 5]
+Subreddit: TheSimpsons
+Title: You don't really believe that, do you?
+Body: 
+URL: https://www.youtube.com/watch?v=4IUxK_0WLbg
+Score: 18
+------------------------------------------------------------
+
+[Post 6]
+Subreddit: UnidanFans
+Title: Limited time silly-business happening with Unidan and pals in /r/casualiama while doing some lab work. Come chat!
+Body: 
+URL: http://www.reddit.com/r/casualiama/comments/2bg6nh/i_ate_a_bunch_of_chinese_food_with_uunidan_and/
+Score: 15
+------------------------------------------------------------
+
+[Post 7]
+Subreddit: atheism
+Title: Creationist Ken Ham Says Aliens Will Go To Hell So Let's Stop Looking For Them
+Body: 
+URL: http://www.huffingtonpost.com/2014/07/22/ken-ham-aliens-go-to-hell_n_5608368.html?ncid=fcbklnkushpmg00000063
+Score: 43
+------------------------------------------------------------
+
+[Post 8]
+Subreddit: collegiatealliance
+Title: The Collegiate Alliance - S01E18: Deadlands pt 1
+Body: 
+URL: https://www.youtube.com/watch?v=FfU0jWuFFD0&list=UU-0aLd6gDykAJYhP9ZtZDag
+Score: 8
+------------------------------------------------------------
+
+[Post 9]
+Subreddit: rpg
+Title: Unidan here! Here's the first part of our Deadlands campagin, hope you enjoy!
+Body: 
+URL: https://www.youtube.com/watch?v=FfU0jWuFFD0&list=UU-0aLd6gDykAJYhP9ZtZDag
+Score: 577
+------------------------------------------------------------
+
+[Post 10]
+Subreddit: Deadlands
+Title: Unidan here, here's part one of our Deadlands campaign, hope you enjoy! We're new to the game, but we've been having a blast so far!
+Body: 
+URL: https://www.youtube.com/watch?v=FfU0jWuFFD0&list=UU-0aLd6gDykAJYhP9ZtZDag
+Score: 16
+------------------------------------------------------------
+
+[Post 11]
+Subreddit: UnidanFans
+Title: The wait is over! Here is Part 1 of our Deadlands campaign! Enjoy as we tackle the spooky wild west as only four complete and utter morons could!
+Body: 
+URL: https://www.youtube.com/watch?v=FfU0jWuFFD0&list=UU-0aLd6gDykAJYhP9ZtZDag
+Score: 11
+------------------------------------------------------------
+
+[Post 12]
+Subreddit: aww
+Title: Certainly off the beaten path, but I thought my snowflake moray eel is pretty cute.
+Body: 
+URL: http://i.imgur.com/HsRtvcB.jpg
+Score: 49
+------------------------------------------------------------
+
+[Post 13]
+Subreddit: pics
+Title: Met an owl last weekend that REALLY likes head scratches!
+Body: 
+URL: http://i.imgur.com/JqTg6OY.jpg
+Score: 8301
+------------------------------------------------------------
+
+[Post 14]
+Subreddit: Awwducational
+Title: While many people lump falcons and hawks together, falcons like the Peregrine are actually more closely related to parrots!
+Body: 
+URL: http://i.imgur.com/sgho6YN.jpg
+Score: 599
+------------------------------------------------------------
+
+[Post 15]
+Subreddit: Owls
+Title: Here's a photo of a Spectacled owl we got to meet today enjoying some head scratches!
+Body: 
+URL: http://i.imgur.com/JqTg6OY.jpg
+Score: 211
+------------------------------------------------------------
+
+[Post 16]
+Subreddit: UnidanFans
+Title: Got to meet an adorable Spectacled owl (among many other birds) today! He really enjoyed head scratches!
+Body: 
+URL: http://i.imgur.com/JqTg6OY.jpg
+Score: 120
+------------------------------------------------------------
+
+[Post 17]
+Subreddit: aww
+Title: Gizmo is a Spectacled owl, and he loves scratches!
+Body: 
+URL: http://i.imgur.com/JqTg6OY.jpg
+Score: 29
+------------------------------------------------------------
+
+[Post 18]
+Subreddit: UnidanFans
+Title: Are you near Toronto? If so, come see The Collegiate Alliance this Saturday at the Stage Select Gaming Expo!
+Body: We'll be doing a live performance at the event, about two hours long or so at some point in the afternoon, more details to follow!
+
+Hope to see you there!
+
+http://stageselect.ca
+URL: https://www.reddit.com/r/UnidanFans/comments/292jee/are_you_near_toronto_if_so_come_see_the/
+Score: 25
+------------------------------------------------------------
+
+[Post 19]
+Subreddit: funny
+Title: I regret everything!
+Body: 
+URL: http://i.imgur.com/9LQd62Q.gif
+Score: 4411
+------------------------------------------------------------
+
+[Post 20]
+Subreddit: AdviceAnimals
+Title: You never know who is browsing Reddit sometimes. We drank a whole bunch of beers, and he was an awesome guy, though!
+Body: 
+URL: http://i.imgur.com/hjdXqNk.png
+Score: 3300
+------------------------------------------------------------
+
+[Post 21]
+Subreddit: aww
+Title: So, my friend's baby goshawk had a play-date with a baby owl.
+Body: 
+URL: http://i.imgur.com/E1DTo37.jpg
+Score: 4100
+------------------------------------------------------------
+
+[Post 22]
+Subreddit: WTF
+Title: Heron Swallowing Rabbit Whole
+Body: 
+URL: http://imgur.com/a/3AWOO
+Score: 1386
+------------------------------------------------------------
+
+[Post 23]
+Subreddit: a:t5_303zl
+Title: Forest patterns a bit strange, understory in this part of woods almost completely gone.
+Body: 
+URL: http://imgur.com/mLfbSks.jpg
+Score: 37
+------------------------------------------------------------
+
+[Post 24]
+Subreddit: reactiongifs
+Title: MRW I check my Reddit inbox!
+Body: 
+URL: http://i.imgur.com/grYLc69.gif
+Score: 1416
+------------------------------------------------------------
+
+[Post 25]
+Subreddit: birding
+Title: We rigged up our GoPro to the bird feeder and recorded a few visitors, check it out! [VID]
+Body: 
+URL: https://www.youtube.com/watch?v=KPtk8HQNWPU&feature=youtu.be
+Score: 58
+------------------------------------------------------------
+
+[Post 26]
+Subreddit: UnidanFans
+Title: Decided to strap the GoPro onto a bird feeder, here's a video of the visitors we filmed!
+Body: 
+URL: https://www.youtube.com/watch?v=KPtk8HQNWPU&feature=youtu.be
+Score: 71
+------------------------------------------------------------
+
+[Post 27]
+Subreddit: gopro
+Title: Decided to strap the GoPro to a bird feeder, here's a video of some of the visitors!
+Body: 
+URL: https://www.youtube.com/watch?v=KPtk8HQNWPU&feature=youtu.be
+Score: 61
+------------------------------------------------------------
+
+[Post 28]
+Subreddit: WTF
+Title: Horrifying myiasis (fly infestation in living tissue) on man's legs. [VID]
+Body: 
+URL: https://www.youtube.com/watch?v=LK4yQ9jNP1c
+Score: 32
+------------------------------------------------------------
+
+[Post 29]
+Subreddit: pics
+Title: Skull Collector's Basement
+Body: 
+URL: http://i.imgur.com/zqWI4k0.jpg
+Score: 1214
+------------------------------------------------------------
+
+[Post 30]
+Subreddit: starbound
+Title: Hey guys, we're streaming Starbound right now, come watch!
+Body: 
+URL: http://twitch.tv/collegiatealliance
+Score: 88
+------------------------------------------------------------
+
+[Post 31]
+Subreddit: UnidanFans
+Title: Came across this white-tailed deer fawn the other day, here's a video!
+Body: 
+URL: https://www.youtube.com/watch?v=6ZMIrS1NTxE
+Score: 33
+------------------------------------------------------------
+
+[Post 32]
+Subreddit: aww
+Title: Here's a video of the little guy we stumbled across at one of my field sites! [VID][1m12s]
+Body: 
+URL: https://www.youtube.com/watch?v=6ZMIrS1NTxE
+Score: 3
+------------------------------------------------------------
+
+[Post 33]
+Subreddit: aww
+Title: We found this little guy while out collecting soil samples today!
+Body: 
+URL: http://i.imgur.com/MluwwyS.jpg
+Score: 70
+------------------------------------------------------------
+
+[Post 34]
+Subreddit: pics
+Title: A speculation of how future civilizations may interpret human and cat fossils.
+Body: 
+URL: http://i.imgur.com/BaNl2Lz.jpg
+Score: 138
+------------------------------------------------------------
+
+[Post 35]
+Subreddit: AfricanMusic
+Title: Mahlathini & The Mahotella Queens - Thokozile [South Africa]
+Body: 
+URL: https://www.youtube.com/watch?v=YcH4cPqykF0
+Score: 12
+------------------------------------------------------------
+
+[Post 36]
+Subreddit: gameofthrones
+Title: [S0408] Concerning "Beetles": A Biologist's Perspective
+Body: 
+URL: http://imgur.com/a/TRJcq
+Score: 780
+------------------------------------------------------------
+
+[Post 37]
+Subreddit: birdsofprey
+Title: Friend of ours just got a male Northern goshawk chick!
+Body: 
+URL: https://www.youtube.com/watch?v=NeqVlnKqTHw&feature=youtu.be
+Score: 29
+------------------------------------------------------------
+
+[Post 38]
+Subreddit: Awwducational
+Title: The Northern Goshawk (Accipiter gentilis) is such a fierce hunter that Attila the Hun adorned his helmet with one! [OC][VID]
+Body: 
+URL: https://www.youtube.com/watch?v=NeqVlnKqTHw&feature=youtu.be
+Score: 18
+------------------------------------------------------------
+
+[Post 39]
+Subreddit: UnidanFans
+Title: Definitely off the beaten path, but a friend of a friend got a baby Northern goshawk (Accipiter gentilis) the other day. It's like a little dinosaur muppet! (xpost /r/aww)
+Body: 
+URL: http://www.reddit.com/r/aww/comments/276ao2/definitely_off_the_beaten_path_but_a_friend_of_a/
+Score: 40
+------------------------------------------------------------
+
+[Post 40]
+Subreddit: aww
+Title: Definitely off the beaten path, but a friend of a friend got a baby Northern goshawk (Accipiter gentilis) the other day. It's like a little dinosaur muppet!
+Body: 
+URL: https://www.youtube.com/watch?v=NeqVlnKqTHw&feature=youtu.be
+Score: 29
+------------------------------------------------------------
+
+[Post 41]
+Subreddit: pics
+Title: Getting a little Hitchcockian in here...
+Body: 
+URL: http://i.imgur.com/MS9uCQE.jpg
+Score: 19
+------------------------------------------------------------
+
+[Post 42]
+Subreddit: AfricanMusic
+Title: Mahlathini - Ngicabange Ngaqeda [South Africa]
+Body: 
+URL: http://youtu.be/EuoN0u4H3-o
+Score: 11
+------------------------------------------------------------
+
+[Post 43]
+Subreddit: MURICA
+Title: Put up some new decor today.
+Body: 
+URL: http://imgur.com/KXkn6f7.jpg
+Score: 1764
+------------------------------------------------------------
+
+[Post 44]
+Subreddit: pics
+Title: Steller's Sea Eagle (Haliaeetus pelagicus) on Ice!
+Body: 
+URL: http://i.imgur.com/RIpoXwk.jpg
+Score: 502
+------------------------------------------------------------
+
+[Post 45]
+Subreddit: circlejerk
+Title: Unpopular Opinion Puffin
+Body: 
+URL: http://i.imgur.com/LS1tIKP.png
+Score: 2368
+------------------------------------------------------------
+
+[Post 46]
+Subreddit: birdsofprey
+Title: Here's an album of some of the birds of prey at a nearby falconry convention, enjoy!
+Body: 
+URL: http://imgur.com/a/QePaG
+Score: 68
+------------------------------------------------------------
+
+[Post 47]
+Subreddit: UnidanFans
+Title: Here's an album of some birds of prey that I photographed, let me know what you think!
+Body: 
+URL: http://www.reddit.com/r/pics/comments/26jkzp/heres_a_small_album_of_some_birds_of_prey_that_i/
+Score: 70
+------------------------------------------------------------
+
+[Post 48]
+Subreddit: pics
+Title: Here's a small album of some birds of prey that I photographed at a falconry convention, enjoy!
+Body: 
+URL: http://imgur.com/a/QePaG
+Score: 124
+------------------------------------------------------------
+
+[Post 49]
+Subreddit: pics
+Title: So, I think our plant has gotten slightly out of hand...
+Body: 
+URL: http://i.imgur.com/04Pds6W.jpg
+Score: 70
+------------------------------------------------------------
+
+[Post 50]
+Subreddit: Awwducational
+Title: Garter snakes will give off an extremely foul-smelling musk when handled as an anti-predator strategy! [OC]
+Body: 
+URL: http://i.imgur.com/YtDYMUk.jpg
+Score: 59
+------------------------------------------------------------
+
+
+Comments:
+------------------------------------------------------------
+[Comment 1]
+Subreddit: blog
+Body: I legitimately laughed.  There was also a /r/crowjerk created, which I particularly enjoyed.  
+Score: 1
+------------------------------------------------------------
+
+[Comment 2]
+Subreddit: blog
+Body: Mainly the submission stuff, I suppose?  Trying to get stuff out of the new queue to get some attention is a pain at times, as for comments, mainly my own hot-headedness against misinformation?
+
+It doesn't make it right, but that's the reasoning, at least.  
+Score: 1
+------------------------------------------------------------
+
+[Comment 3]
+Subreddit: blog
+Body: I legitimately just tried to post this under the other account, but maybe I was logged in under my usual and it's been unbanned?  Not sure, I'll wait to hear from the admins.
+Score: 1
+------------------------------------------------------------
+
+[Comment 4]
+Subreddit: blog
+Body: Done and done!  
+Score: 1
+------------------------------------------------------------
+
+[Comment 5]
+Subreddit: blog
+Body: I don't see why not!  
+
+If the admins feel like they want to give me a second chance, I'll go back to it, but it's just numbers on the other account.  The real thing that I enjoy is talking with people, teaching and having fun on the site, and I can do that regardless of username.  
+
+
+Score: -18
+------------------------------------------------------------
+
+[Comment 6]
+Subreddit: SubredditDrama
+Body: [Follow Willy's comments to various people, it's pretty good.](http://www.reddit.com/r/pics/comments/22mev5/wear_safety_equipment/cgobgnn?context=1)
+Score: -44
+------------------------------------------------------------
+
+[Comment 7]
+Subreddit: funny
+Body: C'mon, man, it's not like there's a gigantic, bold, fire-engine red sign that says "DON'T PUT THE PUNCHLINE IN THE FREAKING TITLE" directly above where you put the title, right?  
+
+Cut the guy some *slack.*
+Score: 21
+------------------------------------------------------------
+
+[Comment 8]
+Subreddit: SubredditDrama
+Body: Generally, but I was already doxxed well before the talk, which is why I was less hesitant about doing it.  
+Score: 1
+------------------------------------------------------------
+
+[Comment 9]
+Subreddit: SubredditDrama
+Body: TEDx talk doesn't pay anything, it's voluntary if they ask you to do one, though I got wined and dined, which was nice.  The funding we raised for the crow project was about 6k.
+Score: 2
+------------------------------------------------------------
+
+[Comment 10]
+Subreddit: SubredditDrama
+Body: I use all of those except ooVoo, which I've never heard of until now, haha.  
+Score: 5
+------------------------------------------------------------
+
+[Comment 11]
+Subreddit: SubredditDrama
+Body: I'm a fan of flying foxes and pangolins, I suppose?  
+Score: 3
+------------------------------------------------------------
+
+[Comment 12]
+Subreddit: SubredditDrama
+Body: Well, silverfish break things down, too, so we're about even. :D
+Score: 2
+------------------------------------------------------------
+
+[Comment 13]
+Subreddit: SubredditDrama
+Body: By asking this, I feel like you're still going to fall short.
+Score: 7
+------------------------------------------------------------
+
+[Comment 14]
+Subreddit: SubredditDrama
+Body: Counter-question: what do humans contribute to the world?  
+Score: 1
+------------------------------------------------------------
+
+[Comment 15]
+Subreddit: funny
+Body: Haha, I'd rather not link it here and essentially doxx myself, but it's one of the top searches on YouTube, it's not hard to find.  I'll send you a PM.
+Score: 2
+------------------------------------------------------------
+
+[Comment 16]
+Subreddit: pics
+Body: > indigenous
+
+> introduced
+
+
+Score: 48
+------------------------------------------------------------
+
+[Comment 17]
+Subreddit: funny
+Body: I had a comment about a sandwich that I made, haha, it's very bizarre.
+
+Also, yup, a TEDx talk, though, not a full TED.  
+Score: 2
+------------------------------------------------------------
+
+[Comment 18]
+Subreddit: SubredditDrama
+Body: Thanks, always appreciate the kind words! :)
+Score: 1
+------------------------------------------------------------
+
+[Comment 19]
+Subreddit: funny
+Body: Nope, though a Reddit comment of mine is being adapted into a short movie!  
+
+I *have* been in a music video though.  I'm making out with someone in the crowd, but it's pretty hard to see, unfortunately/fortunately.  
+Score: 3
+------------------------------------------------------------
+
+[Comment 20]
+Subreddit: SubredditDrama
+Body: After writing in this thread for eight hours, yes.  
+Score: -1
+------------------------------------------------------------
+
+[Comment 21]
+Subreddit: a:t5_303zl
+Body: Seems to be about the same as the others, looks like most of them in the neighborhood were used as woodlots, so lots of double-trunk trees, pits and mounds from trees falling over time, but nothing too crazy, relatively level and the whole neighborhood is actually relatively *high* in relation to the rest of the town.  
+Score: 2
+------------------------------------------------------------
+
+[Comment 22]
+Subreddit: a:t5_303zl
+Body: There's a whole bunch of them throughout the neighborhood, but I've just noticed that it's *only* this one, which is odd.  
+Score: 2
+------------------------------------------------------------
+
+[Comment 23]
+Subreddit: pics
+Body: Just have sex on a pile of wet quartz watches, it's similar.
+Score: 78
+------------------------------------------------------------
+
+[Comment 24]
+Subreddit: SubredditDrama
+Body: You, too!
+Score: 3
+------------------------------------------------------------
+
+[Comment 25]
+Subreddit: SubredditDrama
+Body: [And yet you still call me names!](http://www.reddit.com/r/SubredditDrama/comments/2c31hk/unidan_gets_mad_about_crows_and_jackdaws_in_an/cjbm9im?context=3) :(
+Score: 7
+------------------------------------------------------------
+
+[Comment 26]
+Subreddit: SubredditDrama
+Body: Nah, I don't think so, I've turned down a bunch of offers for stuff that's a bit "shill-y" to me already.  I don't endorse or do anything with the account unless it's for charity, a science project that delivers results or education, I try not to do anything that solely benefits me.  
+Score: 8
+------------------------------------------------------------
+
+[Comment 27]
+Subreddit: AdviceAnimals
+Body: ok
+Score: 24
+------------------------------------------------------------
+
+[Comment 28]
+Subreddit: SubredditDrama
+Body: Always glad to help! :D
+Score: -11
+------------------------------------------------------------
+
+[Comment 29]
+Subreddit: AdviceAnimals
+Body: *Thank you.*
+Score: 44
+------------------------------------------------------------
+
+[Comment 30]
+Subreddit: SubredditDrama
+Body: Jackdaws, actually.  
+Score: -9
+------------------------------------------------------------
+
+[Comment 31]
+Subreddit: explainlikeimfive
+Body: Neat!
+Score: 2
+------------------------------------------------------------
+
+[Comment 32]
+Subreddit: SubredditDrama
+Body: Haha, don't worry, in real life, I'm a horrifying husk of a person.  
+Score: 9
+------------------------------------------------------------
+
+[Comment 33]
+Subreddit: SubredditDrama
+Body: It is, but still: capitalize and italicize, son.  
+Score: 22
+------------------------------------------------------------
+
+[Comment 34]
+Subreddit: SubredditDrama
+Body: What was embarrassing about it?  
+Score: -12
+------------------------------------------------------------
+
+[Comment 35]
+Subreddit: AdviceAnimals
+Body: Well, I'd done a solo AMA prior to that.  And how dare you question Dr. Fancypant's credentials.
+Score: 5
+------------------------------------------------------------
+
+[Comment 36]
+Subreddit: SubredditDrama
+Body: swish
+Score: 2
+------------------------------------------------------------
+
+[Comment 37]
+Subreddit: SubredditDrama
+Body: Love of train wrecks, I guess?  
+Score: 4
+------------------------------------------------------------
+
+[Comment 38]
+Subreddit: SubredditDrama
+Body: Haha, I love it.  
+
+If people want to say mean stuff about me, just say it to my face if it's what you think, who cares?  I should be able to defend myself though! :D
+Score: 5
+------------------------------------------------------------
+
+[Comment 39]
+Subreddit: crowjerk
+Body: Nice crow!
+Score: 10
+------------------------------------------------------------
+
+[Comment 40]
+Subreddit: SubredditDrama
+Body: If anyone is considering me a genius, they should really reconsider.
+Score: 0
+------------------------------------------------------------
+
+[Comment 41]
+Subreddit: AdviceAnimals
+Body: Now I'm so curious!
+Score: 3
+------------------------------------------------------------
+
+[Comment 42]
+Subreddit: SubredditDrama
+Body: Haha, fresh corn would probably be fine.  You can get chicken feed, too, or feed them grass.  They also make pellets for geese that work, too!  
+Score: 2
+------------------------------------------------------------
+
+[Comment 43]
+Subreddit: AdviceAnimals
+Body: This deserves gold.  
+Score: 1
+------------------------------------------------------------
+
+[Comment 44]
+Subreddit: SubredditDrama
+Body: Cracked corn works, I believe.
+Score: 2
+------------------------------------------------------------
+
+[Comment 45]
+Subreddit: SubredditDrama
+Body: It's *Homo sapiens*, you son of a bitch.  
+
+Get your italics and capitals right, and, by the way, they call it *bi*nomial nomenclature for a god damned reason.
+Score: 202
+------------------------------------------------------------
+
+[Comment 46]
+Subreddit: SubredditDrama
+Body: Oooh, one of my colleagues did work on Scrub Jays and had the same thing happen, he was furious.  
+Score: 2
+------------------------------------------------------------
+
+[Comment 47]
+Subreddit: SubredditDrama
+Body: It's darkly funny, I guess?  Someone out there is so upset about me educating people and posting photos of birds on a website that they take the time out of the day to threaten my life via the USPS?  
+Score: 26
+------------------------------------------------------------
+
+[Comment 48]
+Subreddit: SubredditDrama
+Body: Who doesn't?
+Score: 6
+------------------------------------------------------------
+
+[Comment 49]
+Subreddit: SubredditDrama
+Body: The one's I've gotten usually say they're going to slit my throat and rape my SO, typically.  
+Score: 27
+------------------------------------------------------------
+
+[Comment 50]
+Subreddit: SubredditDrama
+Body: :(
+Score: 1
+------------------------------------------------------------
+
+</pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    

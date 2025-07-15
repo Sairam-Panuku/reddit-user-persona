@@ -1,0 +1,440 @@
+Reddit User: u/Character_Market8330
+============================================================
+
+Posts:
+------------------------------------------------------------
+[Post 1]
+Subreddit: mac
+Title: How to fix pink screen + reboot issues when NOTHING works!
+Body: I had the issue in the title. NOTHING WAS WORKING! Resetting nvram, downgrading the system, etc. Tried everything for 3+ weeks. Nothing worked.
+
+Apple Diagonostics showed that there no hardware issues. I knew that the support people at the stores had special needs, so I couldn't rely on them. They would chalk everything up to bad hardware and extort a gazillion dollars out of my ass. So I chose to not get into that path. Best decision.
+
+I figured there was some memory leakage and thus tried limiting max kernel usage to 10% using cpusetter. That did fix it for perhaps a few days. But, somehow, after that I wasn't able to limit that program with cpusetter anymore. I don't know what happened but that option just *stopped* working for some reason!
+
+Giving up, I thought of switching the OS to Asahi Linux. It worked perfectly!!!! Stayed on Asahi Linux for 3-4 weeks. After that, however, I figured out a solution that fixed the issue.
+
+\----------------
+
+On Asahi, very very rarely there used to be the pink screen issue. But the system didn't die. That made me think, "there is some sort of memory clogging happening". "Huh, what could it be?"
+
+I knew about SWAP on linux, already, so that was my first thought. I never joined the connection earlier that the same thing could happen on macOS. Didn't think macOS also used SWAP (which is such a dumb assumption considering its built on fucking UNIX).
+
+So my next thought was, "okay... what happens if I just straight up disable swap". So I read about swap, compression etc on macos. Disabled SIP, tried reading about boot-args, figure the command out... and... VOILA! It worked for 12 hours straight!
+
+But then I thought of updating the system. I updated. The system reloaded. It ran for 30 mins maybe, before crashing again. Checked the boot-args. Apparently, the compressor\_mode has been modified to 4 again. But now I knew how this happened. I knew that on true strong shutdown (i.e. shutdown and wait 30+s before restarting), the nvram completely resets on macOS sillicon So, I learnt how to make that not happen! Turns out you can't change that. Atleast not so easily. So I just introduced an early level script that changes the boot-args to what I want them to be.
+
+\---
+
+TLDR:
+
+* disable System Integrity Protection (SIP) using recoveryOS. Boot to macOS.
+* Use the command \[ `sysctl -a vm.compressor_mode`\] to find out what option the compressor\_mode is set to. If it is 4, we need to change it to 2 or 1.
+* Use the command \[`nvram boot-args="vm_compressor=1" && sudo reboot` \]
+* Check if your system can stay without crashing for the next 10 hours. If it works, then automate setting this boot argument using an early boot script.
+* ask claude about it to help you setup that script.
+URL: https://www.reddit.com/r/mac/comments/1k0nlb9/how_to_fix_pink_screen_reboot_issues_when_nothing/
+Score: 1
+------------------------------------------------------------
+
+[Post 2]
+Subreddit: LegalAdviceIndia
+Title: Zepto pricing malpractices?
+Body: https://www.reddit.com/r/delhi/s/h5h97HPbRR
+
+Saw this post. Is this legal? 
+URL: https://www.reddit.com/r/LegalAdviceIndia/comments/1jjsbx8/zepto_pricing_malpractices/
+Score: 8
+------------------------------------------------------------
+
+[Post 3]
+Subreddit: MacOS
+Title: Need help please: bootloop after UPDATE
+Body: I have a macbook air m2. Recently I updated to Sequoia and then I got stuck into a bootloop. I searched through the internet and found a guide which told me to partition the drive and install sequoia on the new partition.
+
+When I did that, it worked! I was also able to access the original install. However, me being an oversmart dumbass, I wasn't happy with that. Because I was able to enter the previous install, I figured "let's just delete the other partition". 
+
+The bootloop appeared again.
+
+Post that I have tried 100s of things. Deleting the drive completely and reinstalling Sonoma through Recovery. One of the times it worked. 
+
+I thought of upgrading to Sequoia through that Sonoma (guessing things would be fine now). Spoiler: it wasn't.
+
+
+I have tried the same things that led me to Sonoma before: but it doesn't work anymore. What the hell should I do?
+
+URL: https://www.reddit.com/r/MacOS/comments/1hqejb2/need_help_please_bootloop_after_update/
+Score: 2
+------------------------------------------------------------
+
+[Post 4]
+Subreddit: JEENEETards
+Title: ISI Provisional List released
+Body: Provisional List has been released.
+
+[https://www.isical.ac.in/\~admission/Documents/IsiAdmission2024/Admitted-Candidate-Lists/BSTISITest-Post-Admission-List.pdf](https://www.isical.ac.in/~admission/Documents/IsiAdmission2024/Admitted-Candidate-Lists/BSTISITest-Post-Admission-List.pdf)
+
+Also, DM me if you want to join the official counseling group.  (I am a 2nd year student at ISI Kol)
+URL: https://www.reddit.com/r/JEENEETards/comments/1dvzndc/isi_provisional_list_released/
+Score: 1
+------------------------------------------------------------
+
+[Post 5]
+Subreddit: IndianGaming
+Title: Is this covered under apple warranty
+Body: I accidentally pressed the screen when there was a pen inside it and the following happened
+URL: https://i.redd.it/d9ibxux6loob1.png
+Score: 246
+------------------------------------------------------------
+
+[Post 6]
+Subreddit: ISIKolkata
+Title: r/ISIKolkata Lounge
+Body: A place for members of r/ISIKolkata to chat with each other
+URL: https://www.reddit.com/r/ISIKolkata/comments/15wlpv1/risikolkata_lounge/
+Score: 3
+------------------------------------------------------------
+
+[Post 7]
+Subreddit: Btechtards
+Title: HELP: confused b/w ISI Kolkata BStat and IIITD CSE
+Body: I like math and cs both a lot! (and I am not saying that after studying the school subjects, I mean it) 
+
+&#x200B;
+
+what should i do? educational\_info: recent 12th pass
+URL: https://www.reddit.com/r/Btechtards/comments/152u693/help_confused_bw_isi_kolkata_bstat_and_iiitd_cse/
+Score: 19
+------------------------------------------------------------
+
+
+Comments:
+------------------------------------------------------------
+[Comment 1]
+Subreddit: ISIKolkata
+Body: grandmaster / international grandmaster halwa puri hai kya bhai 😂
+Score: 1
+------------------------------------------------------------
+
+[Comment 2]
+Subreddit: whatisit
+Body: How does it feel having no meaning and purpose in life that you have to rely on other people and their body parts to give you pleasure 😂
+Score: 0
+------------------------------------------------------------
+
+[Comment 3]
+Subreddit: ShareMarketupdates
+Body: What college you from?
+Score: 1
+------------------------------------------------------------
+
+[Comment 4]
+Subreddit: ISIKolkata
+Body: Advertisement isn't allowed. If you can give it for free, sure, else no.
+Score: 1
+------------------------------------------------------------
+
+[Comment 5]
+Subreddit: IndianStreetBets
+Body: Good pun in a horrifying context
+Score: 22
+------------------------------------------------------------
+
+[Comment 6]
+Subreddit: StartUpIndia
+Body: Yeah I'm up
+Score: 0
+------------------------------------------------------------
+
+[Comment 7]
+Subreddit: ShareMarketupdates
+Body: Source? Can't find anything about this
+Score: 3
+------------------------------------------------------------
+
+[Comment 8]
+Subreddit: ShareMarketupdates
+Body: For real!!!
+Score: 15
+------------------------------------------------------------
+
+[Comment 9]
+Subreddit: indianfashionteens
+Body: Good luck👍
+Score: 2
+------------------------------------------------------------
+
+[Comment 10]
+Subreddit: indianfashionteens
+Body: It'll look much better if you get slimmer
+Score: 2
+------------------------------------------------------------
+
+[Comment 11]
+Subreddit: ISIKolkata
+Body: If you worship Math with devotion it will reward you with unparalleled understanding
+Score: 4
+------------------------------------------------------------
+
+[Comment 12]
+Subreddit: kolkata
+Body: Do these 4 things
+
+Block him from everywhere
+Remove his number from your phone
+Delete all pictures with him
+Take a resolve "I'm done with this guy. I am not pathetic."
+
+----
+
+Then let a week pass. And start talking to other people
+Score: 2
+------------------------------------------------------------
+
+[Comment 13]
+Subreddit: TeenIndia
+Body: Bro thinks girls will distract him🤣
+Score: 1
+------------------------------------------------------------
+
+[Comment 14]
+Subreddit: kolkata
+Body: Stop loving him
+Score: 3
+------------------------------------------------------------
+
+[Comment 15]
+Subreddit: TeenIndia
+Body: Koi ladki distract nahi karegi bhai, don't worry. You will have no problems trust me 👍😀
+Score: 1
+------------------------------------------------------------
+
+[Comment 16]
+Subreddit: TeenIndia
+Body: There are bigger issues in the world than internet validation.
+Score: 1
+------------------------------------------------------------
+
+[Comment 17]
+Subreddit: ISIKolkata
+Body: Fil the form pinned in the subreddit and join the merit list group. You could talk to many seniors.
+Score: 1
+------------------------------------------------------------
+
+[Comment 18]
+Subreddit: ISIKolkata
+Body: Normalization regards to the amount of people giving both exam: is exactly why they are taking percentiles. 
+
+One cannot change reservation on a whim. There are laws and acts governing that. 
+
+Again, removing the exam is unfair. They are trying to set a precedent that a economically weak student who performs well in Math in JEE or CUET would come to ISI.   
+As the years go by, the best math people would take CUET and JEE Main both. These issues would be resolved automatically.   
+Unfortunately, the first few batches would suffer.
+Score: 1
+------------------------------------------------------------
+
+[Comment 19]
+Subreddit: ISIKolkata
+Body: LInks get autoremoved by reddit.
+Score: 1
+------------------------------------------------------------
+
+[Comment 20]
+Subreddit: ISIKolkata
+Body: As I said: suggest a logically sound alternative.
+Score: 1
+------------------------------------------------------------
+
+[Comment 21]
+Subreddit: ISIKolkata
+Body: How do you normalize CUET percentiles and JEE percentiles then? Give me a logically sound system?
+
+Conditional on the fact that everybody takes both the exams, this method becomes fair. But in the world we live in, the best students take JEE Mains and the others take CUET. This is why this anomaly is there. 
+
+If one adjusts to that fact and makes a normalization formula that somehow could equate CUET with JEE Mains, you'd be saying "CUET applicants are inferior". The ISI admin would never do that. 
+
+What is the solution then? 
+
+\- Everybody takes both the exams.   
+\- Make your own separate exam.   
+\- Remove CUET. 
+
+1 is unrealistic. There is probably a reason they didn't do 2. 3 is unfair.
+Score: 3
+------------------------------------------------------------
+
+[Comment 22]
+Subreddit: StartUpIndia
+Body: Such a dumb take.
+Score: 3
+------------------------------------------------------------
+
+[Comment 23]
+Subreddit: StartUpIndia
+Body: Sirf good colleges ki baat nahi hai. Read my comment again. Anyway with your attitude I don't think you have any motivation to quit.
+Score: 1
+------------------------------------------------------------
+
+[Comment 24]
+Subreddit: Btechtards
+Body: You will never have high amount of upvotes because these people who are crying about them cheating cheat themselves too. Fucking hate cheaters.
+Score: 1
+------------------------------------------------------------
+
+[Comment 25]
+Subreddit: StartUpIndia
+Body: Nothing is easy in life. But nothing matters more than not getting your life energy sucked out of you, nothing matters more than preventing your dreams from getting killed. You have to try hard. To find bosses who are humble, you need to find bosses who have seen much smarter people than themselves. This could be someone who came from a very good branch from a very good college, or has done a PhD in a very good school. You need to vet people who probably have no contact with people smarter than themselves.
+Score: 2
+------------------------------------------------------------
+
+[Comment 26]
+Subreddit: Indiangirlsontinder
+Body: Zindagi mein kitna free time hai bhai terepe? 6 mahine se marwa raha hai ek bandi ke piche? Ab tak you would have met so many other women if you had the capability to filter out women who don't give a shit about you.
+Score: 2
+------------------------------------------------------------
+
+[Comment 27]
+Subreddit: StartUpIndia
+Body: She should leave.
+Score: 1
+------------------------------------------------------------
+
+[Comment 28]
+Subreddit: Indiangirlsontinder
+Body: Lmao he's right you're just jealous
+Score: 2
+------------------------------------------------------------
+
+[Comment 29]
+Subreddit: kolkata
+Body: 😂😂😂😂
+Score: 1
+------------------------------------------------------------
+
+[Comment 30]
+Subreddit: kolkata
+Body: Very cute indeed
+Score: 2
+------------------------------------------------------------
+
+[Comment 31]
+Subreddit: Indiangirlsontinder
+Body: He's wasting his time on you.
+Score: 11
+------------------------------------------------------------
+
+[Comment 32]
+Subreddit: Indiangirlsontinder
+Body: No, all do not have good personalities. Most people are boring.
+Score: 1
+------------------------------------------------------------
+
+[Comment 33]
+Subreddit: 3Blue1Brown
+Body: You mean the median ;). There aren't 50% students below the average, that's only true for the median.
+Score: 1
+------------------------------------------------------------
+
+[Comment 34]
+Subreddit: india
+Body: It does. Reread the comment. It makes absolute sense for reservation to have creamy layer.
+Score: 0
+------------------------------------------------------------
+
+[Comment 35]
+Subreddit: IndianStreetBets
+Body: I'm from ISI Kolkata with strong research experience. Do you hire interns?
+Score: 1
+------------------------------------------------------------
+
+[Comment 36]
+Subreddit: ISIKolkata
+Body: 😂😂😂😂😂
+Score: 2
+------------------------------------------------------------
+
+[Comment 37]
+Subreddit: ISIKolkata
+Body: Mil bhi jaye toh compete karna mushkil hoga dusro se 88 percentile pe.
+Score: 1
+------------------------------------------------------------
+
+[Comment 38]
+Subreddit: ISIKolkata
+Body: Dur reh bhai🙏
+Score: 2
+------------------------------------------------------------
+
+[Comment 39]
+Subreddit: Indiangirlsontinder
+Body: So funny
+Score: 1
+------------------------------------------------------------
+
+[Comment 40]
+Subreddit: Indiangirlsontinder
+Body: Bhai usko bata ki wo hoe hai aur tera dil todega. You have to be rude and direct. Tell him ki lund ke dum pe gand mat marwa
+Score: 1
+------------------------------------------------------------
+
+[Comment 41]
+Subreddit: Indiangirlsontinder
+Body: Abe wo bol toh Rahi hai 5 baar text kar raha tha wo. Aur they aren't committed or anything. What she did is completely fine.
+Score: -1
+------------------------------------------------------------
+
+[Comment 42]
+Subreddit: Indiangirlsontinder
+Body: Nah you're completely fine! This is the behavior that people need! Do not worry you will find the one! Trust me there are many out there!
+Score: -8
+------------------------------------------------------------
+
+[Comment 43]
+Subreddit: Indiangirlsontinder
+Body: 😂😂😂😂
+Score: -3
+------------------------------------------------------------
+
+[Comment 44]
+Subreddit: kolkata
+Body: Lol.
+Score: 2
+------------------------------------------------------------
+
+[Comment 45]
+Subreddit: Indiangirlsontinder
+Body: You can choose not to
+Score: -7
+------------------------------------------------------------
+
+[Comment 46]
+Subreddit: JEENEETards
+Body: Cool. Then ISI it is.
+Score: 1
+------------------------------------------------------------
+
+[Comment 47]
+Subreddit: JEENEETards
+Body: do you deeply like maths? do you like proofs? do you get energized by sitting and thinking and problems? 
+This course is hard and you might be better off at NIT Trichy if you don't.
+Score: 1
+------------------------------------------------------------
+
+[Comment 48]
+Subreddit: JEENEETards
+Body: I literally said that it did in the last comment, didn't I?
+Score: 1
+------------------------------------------------------------
+
+[Comment 49]
+Subreddit: Indiangirlsontinder
+Body: Well done. You will find the one, don't worry.
+Score: 175
+------------------------------------------------------------
+
+[Comment 50]
+Subreddit: Indiangirlsontinder
+Body: and he will stay, because he is indeed a fucking idiot.
+Score: 45
+------------------------------------------------------------
+
