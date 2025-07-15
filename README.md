@@ -33,7 +33,7 @@ It analyzes user behavior, builds a structured profile, and generates a clean, s
 
 ## 📁 Folder Structure
 
-```bash
+```
 reddit-user-persona/
 ├── .env                      # Reddit credentials (ignored)
 ├── .gitignore
@@ -48,8 +48,9 @@ reddit-user-persona/
     ├── json_output/          # Persona data (.json)
     └── html_output/          # Final profile pages (.html)
 
-'''
-🚀 Getting Started
+---
+
+#🚀 Getting Started
 1. Clone the Repo
 bash
 Copy code
