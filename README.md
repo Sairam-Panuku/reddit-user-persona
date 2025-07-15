@@ -48,6 +48,7 @@ reddit-user-persona/
     ├── json_output/          # Persona data (.json)
     └── html_output/          # Final profile pages (.html)
 
+'''
 🚀 Getting Started
 1. Clone the Repo
 bash
