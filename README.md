@@ -1,24 +1,24 @@
-Here’s a clean and professional `README.md` for your **Reddit User Persona Extractor** project:
+Here’s your full, updated, **polished `README.md`** file, ready to drop into your GitHub repository — including fixed image embedding, improved formatting, and a clean layout that looks great both in VS Code and on GitHub.
 
 ---
 
 ```markdown
 # 🧠 Reddit User Persona Extractor
 
-This project automates the extraction and visualization of **Reddit user personas** by collecting their public **posts** and **comments**, analyzing their behavioral traits, and presenting them in a **beautiful HTML profile**.
+This project automates the extraction and visualization of **Reddit user personas** by collecting their public **posts** and **comments**, analyzing behavioral traits, and presenting them in a clean, beautiful **HTML profile**.
 
 ---
 
 ## 📌 Features
 
-- 🔍 Fetches public posts & comments from a list of Reddit usernames
-- 🤖 Generates user personas based on language analysis
-- 📄 Saves:
-  - Raw data as `.txt`
-  - Extracted persona as `.json`
-  - Styled persona page as `.html`
-- 🎨 HTML profiles with clean, colorful layouts
-- 🧾 Raw Reddit data displayed alongside persona on the same page
+- 🔍 Fetches Reddit posts & comments from given usernames
+- 🤖 Generates a summarized **user persona** (age, job, motivations, etc.)
+- 🗂️ Outputs:
+  - ✅ `.txt` – raw Reddit content
+  - ✅ `.json` – structured persona data
+  - ✅ `.html` – styled persona profile
+- 🎨 Responsive, scrollable HTML layout
+- 🧾 Right panel includes raw scraped data
 
 ---
 
@@ -26,29 +26,29 @@ This project automates the extraction and visualization of **Reddit user persona
 
 - `Python 3.7+`
 - [`PRAW`](https://praw.readthedocs.io/) – Reddit API wrapper
-- `OpenAI` (optional if GPT integration is enabled)
-- `HTML + CSS` – modern responsive design
-- `.env` config using `python-dotenv`
+- `HTML + CSS` – responsive & aesthetic layout
+- `dotenv` – for secure credential loading
+- *(Optional)* GPT-based persona generation
 
 ---
 
-## 📂 Project Structure
+## 📁 Folder Structure
 
 ```
 
 reddit-user-persona/
-│
-├── main.py                    # Entry point to fetch data & generate profiles
-├── generate\_persona.py        # Extracts persona traits from scraped data
-├── generate\_html\_profile.py   # Builds HTML profile using persona data
-│
-├── outputs/
-│   ├── text\_output/           # Raw Reddit posts/comments as .txt
-│   ├── json\_output/           # Generated persona as .json
-│   └── html\_output/           # Beautiful HTML profile
-│
-├── .env                       # Reddit API credentials (not tracked)
-└── README.md                  # This file
+├── .env                      # Reddit credentials (ignored)
+├── .gitignore
+├── main.py                   # Orchestrates full flow
+├── generate\_persona.py       # Extracts persona from text
+├── generate\_html\_profile.py  # Creates styled HTML profiles
+├── sample\_output.png         # Screenshot of final HTML output
+├── requirements.txt
+├── README.md
+└── outputs/
+├── text\_output/          # Raw Reddit content (.txt)
+├── json\_output/          # Persona data (.json)
+└── html\_output/          # Final profile pages (.html)
 
 ````
 
@@ -59,21 +59,21 @@ reddit-user-persona/
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/reddit-user-persona.git
+git clone https://github.com/Sairam-Panuku/reddit-user-persona.git
 cd reddit-user-persona
 ````
 
-### 2. Install Requirements
+### 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-> 📦 Make sure to include `praw`, `python-dotenv` in your `requirements.txt`.
+> ✅ Ensure `praw`, `python-dotenv` are included in `requirements.txt`.
 
-### 3. Set Up Reddit API
+### 3. Setup Reddit API Keys
 
-Create a `.env` file:
+Create a file named `.env` with the following format:
 
 ```
 REDDIT_CLIENT_ID=your_client_id
@@ -89,46 +89,72 @@ REDDIT_USER_AGENT=persona-extractor-script
 python main.py
 ```
 
-HTML files will be generated inside `outputs/html_output/`.
+Generated files will appear in the `outputs/` folder:
+
+* 🔹 `text_output/` – raw data (`username.txt`)
+* 🔹 `json_output/` – extracted persona (`username_persona.json`)
+* 🔹 `html_output/` – final profile (`username_profile.html`)
 
 ---
 
-## 🌈 Sample Output
+## 📸 Sample Output
 
-![Example Screenshot](preview.png)
+Here’s how the final persona profile looks in HTML:
+
+![Reddit User Persona Screenshot](sample_output.png)
+
+> Left side: Clean persona data
+> Right side: Scrollable raw Reddit content
 
 ---
 
-## 📘 Notes
+## 🧠 Example Use Cases
 
-* Each user will have:
+* UX Designers creating behavioral personas
+* Recruiters analyzing public profiles
+* Social scientists & behavioral analysts
+* Devs building portfolio-style personality pages
 
-  * `username.txt` in `outputs/text_output/`
-  * `username_persona.json` in `outputs/json_output/`
-  * `username_profile.html` in `outputs/html_output/`
-* If persona generation uses GPT or LLMs, ensure rate-limiting & key safety.
-* Extend `generate_persona.py` to include tone, empathy, or brand preferences.
+---
+
+## 📝 Notes
+
+* ✍️ Each Reddit user entry goes through:
+
+  1. Data scraping
+  2. Persona extraction from `.txt`
+  3. HTML generation
+* ✨ HTML layout is clean, responsive, and scrollable
+* 🛡️ `.env` is **ignored via `.gitignore`**
 
 ---
 
 ## 🤝 Contribution
 
-PRs are welcome! If you want to add dark mode, GPT integration, or export as PDF – open an issue first.
+Pull requests are welcome! Suggested improvements:
+
+* 🌙 Dark mode toggle
+* 🧠 GPT-4 integration for richer persona modeling
+* 🖨️ Export to PDF
+* 📊 Persona comparison charts
 
 ---
 
 ## 📄 License
 
-MIT License. Do what you want. Credit appreciated.
+MIT License. Feel free to use and improve. Attribution appreciated 💙
 
 ---
 
 ## 💡 Inspiration
 
-Inspired by product design workflows that build **personas** to understand user behavior through social signals.
+Inspired by the need to **understand user behavior through public signals** and make user profiles more visual and structured for design, hiring, and research purposes.
 
 ---
 
-> Built with ❤️ by \ Sairam Panuku
+> Built with ❤️ by [Sairam Panuku](https://github.com/Sairam-Panuku)
 
+```
+
+---
 
